@@ -61,8 +61,8 @@ $(function(){
 			cache: false,
 			success: function(jsonData) {	
 				//同步Player中的歌曲列表
-				var data = JSON.parse(jsonData); 
-				musicPlayer.musicList = data;
+				var data = jsonData; 
+				musicPlayer.musicList = jsonData;
 				//获得歌曲列表
 				$musicList = $('.music_list');
 				//创建歌曲li，并添加到歌曲列表中
