@@ -57,7 +57,7 @@ $(function(){
 	(function getMusic () {
 		$.ajax({
 			type: "get",
-			url: "getjson.php?" + Math.random(),
+			url: "./getjson.php?" + Math.random(),
 			cache: false,
 			success: function(jsonData) {	
 				//同步Player中的歌曲列表
