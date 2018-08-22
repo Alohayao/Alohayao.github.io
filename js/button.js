@@ -1,21 +1,18 @@
 $(document).ready(function() {
 	//to-top
 	$(".to-top-btn").click(function() {
-		$('body').animate({
-			scrollTop: 0
-		}, 200);
-		//		 $('body').scrollTop(0,0);
+		$("html,body").animate({scrollTop:0},"slow");
 	})
 
 	//滚动一定距离后显示to-top-btn
-	window.onscroll = function() {
-		var $scrolltop = $("body").scrollTop();
+	$(window).on('scroll', function() {
+		var $scrolltop = $(document).scrollTop();
 		if($scrolltop > 800) {
 			$(".to-top-btn").show();
 		} else {
 			$(".to-top-btn").hide();
 		}
-	}
+	})
 	
 	//.connect-btn
 	$(".help-entry").mouseover(function(){
