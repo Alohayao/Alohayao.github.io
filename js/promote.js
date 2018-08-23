@@ -22,6 +22,7 @@
 
 	lis.click(function() {
 		i = $(this).index();
+		clearInterval(t);
 		change();
 	})
 

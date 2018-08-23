@@ -4,7 +4,6 @@ $(".ali-product>ul>li").click(function() {
 	var lis = $(this).closest(".ali-product").find("li");
 	$(lis).each(function() {
 		var i = $(this).index();
-
 		if(i == index) {
 			$(this).addClass("active");
 			$(this).find(".ali-product-icon").addClass("active");
