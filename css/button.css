@@ -7,6 +7,7 @@
 
 .help-entry {
 	position: relative;
+	border: 1px solid black;
 }
 
 .connect-btn {
@@ -22,6 +23,7 @@
 	width: 44px;
 	height: 44px;
 	box-shadow: 0 6px 12px 0 rgba(0,0,0,.15);
+
 }
 
 .connect-panel {
@@ -31,17 +33,23 @@
 	position: absolute;
 	right: 0px;
 	bottom: 49px;
-	visibility: hidden;
 	opacity: 0;
 	transition: all 0.3s;
-	transition-delay: 0.3s;
+	transition-delay: 0.1s ;
+}
+
+.connect-panel.active {
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 6px 12px 0 rgba(0,0,0,.15);
+	padding: 20px;
+	position: absolute;
+	right: 0px;
+	bottom: 59px;
+	opacity: 1;
 }
 
 ul.panel-content{
 	list-style-type: none;
-	opacity: 0;
-	transition: opacity 0.3s;
-	transition-delay: 0.3s;
 }
 
 .connect-icon,
