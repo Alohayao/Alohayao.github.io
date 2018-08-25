@@ -26,8 +26,6 @@ $(function() {
 	$(".slide-btn-panel.left-btn").click(function() {
 		i--;
 		if(i == 0){
-			//css执行滞后
-//			$(this).siblings(".slide-content").css("left", "-2959px");
 			$(this).siblings(".slide-content").stop(true,true).animate({
 				left: '-2959px'
 			}, 350);
@@ -36,6 +34,5 @@ $(function() {
 		$(this).siblings(".slide-content").stop(true,true).animate({
 			left: '+=269px'
 		}, 350);
-
 	})
 })
